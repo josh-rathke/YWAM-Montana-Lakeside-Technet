@@ -1,0 +1,439 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 19/02/2016 14:49
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+.flaticon-3d-paper-glasses:before { content: "\f100"; }
+.flaticon-3d-televisin:before { content: "\f101"; }
+.flaticon-4g-internet-connection:before { content: "\f102"; }
+.flaticon-add-to-the-cart:before { content: "\f103"; }
+.flaticon-antenna-with-signal:before { content: "\f104"; }
+.flaticon-apple-music-player:before { content: "\f105"; }
+.flaticon-audio-mute:before { content: "\f106"; }
+.flaticon-audio-system:before { content: "\f107"; }
+.flaticon-audio-volume:before { content: "\f108"; }
+.flaticon-battery-warning:before { content: "\f109"; }
+.flaticon-battery-with-charger:before { content: "\f10a"; }
+.flaticon-blocked-lock:before { content: "\f10b"; }
+.flaticon-bright-light-bulb:before { content: "\f10c"; }
+.flaticon-business-briefcase:before { content: "\f10d"; }
+.flaticon-calculator-buttons:before { content: "\f10e"; }
+.flaticon-calculator-with-two-buttons:before { content: "\f10f"; }
+.flaticon-camera-tripod:before { content: "\f110"; }
+.flaticon-cd-music:before { content: "\f111"; }
+.flaticon-cd-player:before { content: "\f112"; }
+.flaticon-cellphone-sim-card:before { content: "\f113"; }
+.flaticon-cellphone-sim-card-1:before { content: "\f114"; }
+.flaticon-cellphone-with-buttons:before { content: "\f115"; }
+.flaticon-charging-phone:before { content: "\f116"; }
+.flaticon-chat-bubbles:before { content: "\f117"; }
+.flaticon-chatting-bubble:before { content: "\f118"; }
+.flaticon-circular-play-button:before { content: "\f119"; }
+.flaticon-clipboard-with-text:before { content: "\f11a"; }
+.flaticon-clock-needles:before { content: "\f11b"; }
+.flaticon-clock-with-check-sign:before { content: "\f11c"; }
+.flaticon-closed-folder:before { content: "\f11d"; }
+.flaticon-cloud-connection:before { content: "\f11e"; }
+.flaticon-cloud-upload-signal:before { content: "\f11f"; }
+.flaticon-compac-disc-audio:before { content: "\f120"; }
+.flaticon-computer-connections:before { content: "\f121"; }
+.flaticon-computer-picture:before { content: "\f122"; }
+.flaticon-computer-shield:before { content: "\f123"; }
+.flaticon-computing-cloud-with-signal:before { content: "\f124"; }
+.flaticon-connection-system:before { content: "\f125"; }
+.flaticon-copy-file:before { content: "\f126"; }
+.flaticon-crayon-and-line:before { content: "\f127"; }
+.flaticon-cut-microphone:before { content: "\f128"; }
+.flaticon-desk-lamp-on:before { content: "\f129"; }
+.flaticon-devices-connected:before { content: "\f12a"; }
+.flaticon-directional-compass:before { content: "\f12b"; }
+.flaticon-download-from-computing-cloud:before { content: "\f12c"; }
+.flaticon-drawing-tablet:before { content: "\f12d"; }
+.flaticon-drawing-tablet-1:before { content: "\f12e"; }
+.flaticon-dvd-player:before { content: "\f12f"; }
+.flaticon-earphones-unplugged:before { content: "\f130"; }
+.flaticon-erasing-file:before { content: "\f131"; }
+.flaticon-exchanging-emails:before { content: "\f132"; }
+.flaticon-favourite-heart:before { content: "\f133"; }
+.flaticon-fax-with-phone:before { content: "\f134"; }
+.flaticon-file-checked:before { content: "\f135"; }
+.flaticon-film-clapper:before { content: "\f136"; }
+.flaticon-film-roler:before { content: "\f137"; }
+.flaticon-film-strips-video-player:before { content: "\f138"; }
+.flaticon-folder-with-plus-sign:before { content: "\f139"; }
+.flaticon-forwards:before { content: "\f13a"; }
+.flaticon-frontal-video-camera:before { content: "\f13b"; }
+.flaticon-game-boy-console:before { content: "\f13c"; }
+.flaticon-graphic-on-screen:before { content: "\f13d"; }
+.flaticon-hard-drive-symbol:before { content: "\f13e"; }
+.flaticon-hd-television:before { content: "\f13f"; }
+.flaticon-headphones-sound:before { content: "\f140"; }
+.flaticon-headphones-with-microphone:before { content: "\f141"; }
+.flaticon-headphones-with-wire:before { content: "\f142"; }
+.flaticon-home-phone:before { content: "\f143"; }
+.flaticon-home-telephone-top-view:before { content: "\f144"; }
+.flaticon-horizontal-tablet-screen:before { content: "\f145"; }
+.flaticon-horizontal-tablet-with-hand:before { content: "\f146"; }
+.flaticon-horizontal-tablet-with-left-arrow:before { content: "\f147"; }
+.flaticon-infographic-file:before { content: "\f148"; }
+.flaticon-internet-full-signal:before { content: "\f149"; }
+.flaticon-ipod-player:before { content: "\f14a"; }
+.flaticon-ipod-reproductor:before { content: "\f14b"; }
+.flaticon-joystick-with-button:before { content: "\f14c"; }
+.flaticon-keyboard-with-cable:before { content: "\f14d"; }
+.flaticon-laptop-arrow:before { content: "\f14e"; }
+.flaticon-laptop-message:before { content: "\f14f"; }
+.flaticon-laptop-signal:before { content: "\f150"; }
+.flaticon-letter-with-text-lines:before { content: "\f151"; }
+.flaticon-linked-chains:before { content: "\f152"; }
+.flaticon-list-with-one-cross:before { content: "\f153"; }
+.flaticon-loading-curved-arrow:before { content: "\f154"; }
+.flaticon-location-point:before { content: "\f155"; }
+.flaticon-locked-phone:before { content: "\f156"; }
+.flaticon-lp-player:before { content: "\f157"; }
+.flaticon-luminosity:before { content: "\f158"; }
+.flaticon-mail-agenda:before { content: "\f159"; }
+.flaticon-mail-signal:before { content: "\f15a"; }
+.flaticon-message-on-phone:before { content: "\f15b"; }
+.flaticon-microphone-with-wire:before { content: "\f15c"; }
+.flaticon-minus-battery:before { content: "\f15d"; }
+.flaticon-mobile-app:before { content: "\f15e"; }
+.flaticon-mobile-phone-with-touch-screen:before { content: "\f15f"; }
+.flaticon-morning-digital-clock:before { content: "\f160"; }
+.flaticon-mousepad:before { content: "\f161"; }
+.flaticon-music-player-buttons:before { content: "\f162"; }
+.flaticon-network-cam:before { content: "\f163"; }
+.flaticon-newspaper-text:before { content: "\f164"; }
+.flaticon-office-box:before { content: "\f165"; }
+.flaticon-old-calculator:before { content: "\f166"; }
+.flaticon-old-photo-camera:before { content: "\f167"; }
+.flaticon-old-projector:before { content: "\f168"; }
+.flaticon-old-video-camera:before { content: "\f169"; }
+.flaticon-one-missed-call:before { content: "\f16a"; }
+.flaticon-online-supermarket-cart:before { content: "\f16b"; }
+.flaticon-open-archive:before { content: "\f16c"; }
+.flaticon-open-laptop:before { content: "\f16d"; }
+.flaticon-open-letter:before { content: "\f16e"; }
+.flaticon-pause-round-button:before { content: "\f16f"; }
+.flaticon-pc-and-smartphone:before { content: "\f170"; }
+.flaticon-pendrive-checked:before { content: "\f171"; }
+.flaticon-phone-connection:before { content: "\f172"; }
+.flaticon-phone-message:before { content: "\f173"; }
+.flaticon-phone-wifi-signal:before { content: "\f174"; }
+.flaticon-phone-with-keys:before { content: "\f175"; }
+.flaticon-photo-camera-with-flash:before { content: "\f176"; }
+.flaticon-photograph-film:before { content: "\f177"; }
+.flaticon-play-arrow:before { content: "\f178"; }
+.flaticon-play-movie-button:before { content: "\f179"; }
+.flaticon-plug-with-cord:before { content: "\f17a"; }
+.flaticon-portable-game-console:before { content: "\f17b"; }
+.flaticon-portable-music-player:before { content: "\f17c"; }
+.flaticon-portable-music-player-1:before { content: "\f17d"; }
+.flaticon-portable-radio:before { content: "\f17e"; }
+.flaticon-positive-battery:before { content: "\f17f"; }
+.flaticon-printing-document:before { content: "\f180"; }
+.flaticon-radar-dish:before { content: "\f181"; }
+.flaticon-radio-with-antenna:before { content: "\f182"; }
+.flaticon-radio-with-antenna-1:before { content: "\f183"; }
+.flaticon-radio-with-antenna-signal:before { content: "\f184"; }
+.flaticon-ram-memory:before { content: "\f185"; }
+.flaticon-reading-message:before { content: "\f186"; }
+.flaticon-recycling-bin:before { content: "\f187"; }
+.flaticon-refresh-files:before { content: "\f188"; }
+.flaticon-refresh-laptop:before { content: "\f189"; }
+.flaticon-remote-control:before { content: "\f18a"; }
+.flaticon-remove-folder-circular-button:before { content: "\f18b"; }
+.flaticon-remove-from-cart-button:before { content: "\f18c"; }
+.flaticon-round-umbrella:before { content: "\f18d"; }
+.flaticon-safe-pc:before { content: "\f18e"; }
+.flaticon-saving-disc:before { content: "\f18f"; }
+.flaticon-screen-with-cloud:before { content: "\f190"; }
+.flaticon-searching-apps:before { content: "\f191"; }
+.flaticon-secure-computer:before { content: "\f192"; }
+.flaticon-security-box:before { content: "\f193"; }
+.flaticon-security-camera:before { content: "\f194"; }
+.flaticon-shelter:before { content: "\f195"; }
+.flaticon-shut-down-button:before { content: "\f196"; }
+.flaticon-shut-down-phone:before { content: "\f197"; }
+.flaticon-smartphone-with-headphones:before { content: "\f198"; }
+.flaticon-smartphone-with-pen:before { content: "\f199"; }
+.flaticon-speaker-box:before { content: "\f19a"; }
+.flaticon-star-mark:before { content: "\f19b"; }
+.flaticon-stop-button:before { content: "\f19c"; }
+.flaticon-supermarket-cart:before { content: "\f19d"; }
+.flaticon-system-controller:before { content: "\f19e"; }
+.flaticon-telephone-screen:before { content: "\f19f"; }
+.flaticon-television-remote-control:before { content: "\f1a0"; }
+.flaticon-three-bars-stats:before { content: "\f1a1"; }
+.flaticon-tiny-church-bell:before { content: "\f1a2"; }
+.flaticon-tiny-domestic-camera:before { content: "\f1a3"; }
+.flaticon-tiny-mouse:before { content: "\f1a4"; }
+.flaticon-tiny-pc:before { content: "\f1a5"; }
+.flaticon-tiny-upload-symbol:before { content: "\f1a6"; }
+.flaticon-touch-screen-with-hand:before { content: "\f1a7"; }
+.flaticon-touching-tablet-screen:before { content: "\f1a8"; }
+.flaticon-triangular-warning-signal:before { content: "\f1a9"; }
+.flaticon-trifolded-map:before { content: "\f1aa"; }
+.flaticon-tv-monitor:before { content: "\f1ab"; }
+.flaticon-tv-screen-with-antenna:before { content: "\f1ac"; }
+.flaticon-two-computer-connection:before { content: "\f1ad"; }
+.flaticon-two-gears:before { content: "\f1ae"; }
+.flaticon-two-photos:before { content: "\f1af"; }
+.flaticon-usb-cable:before { content: "\f1b0"; }
+.flaticon-usb-conecction:before { content: "\f1b1"; }
+.flaticon-usb-connector:before { content: "\f1b2"; }
+.flaticon-usb-port:before { content: "\f1b3"; }
+.flaticon-usb-stick:before { content: "\f1b4"; }
+.flaticon-vertical-speakers:before { content: "\f1b5"; }
+.flaticon-vhs-player-and-tape:before { content: "\f1b6"; }
+.flaticon-vibrating-phone:before { content: "\f1b7"; }
+.flaticon-vibration-symbol:before { content: "\f1b8"; }
+.flaticon-video-player-with-timeline:before { content: "\f1b9"; }
+.flaticon-vintage-mobile-phone:before { content: "\f1ba"; }
+.flaticon-vintage-tape:before { content: "\f1bb"; }
+.flaticon-vintage-video-camera:before { content: "\f1bc"; }
+.flaticon-voice-recording:before { content: "\f1bd"; }
+.flaticon-volume-bars:before { content: "\f1be"; }
+.flaticon-web-certificate:before { content: "\f1bf"; }
+.flaticon-wireless-keyboard:before { content: "\f1c0"; }
+.flaticon-wireless-mouse:before { content: "\f1c1"; }
+.flaticon-wireless-router:before { content: "\f1c2"; }
+.flaticon-wristwatch-app:before { content: "\f1c3"; }
+.flaticon-writting-file:before { content: "\f1c4"; }
+.flaticon-xerox-machine:before { content: "\f1c5"; }
+.flaticon-zoom-out-lens:before { content: "\f1c6"; }
+.flaticon-zooming-magnifying-glass:before { content: "\f1c7"; }
+    
+    $font-Flaticon-3d-paper-glasses: "\f100";
+    $font-Flaticon-3d-televisin: "\f101";
+    $font-Flaticon-4g-internet-connection: "\f102";
+    $font-Flaticon-add-to-the-cart: "\f103";
+    $font-Flaticon-antenna-with-signal: "\f104";
+    $font-Flaticon-apple-music-player: "\f105";
+    $font-Flaticon-audio-mute: "\f106";
+    $font-Flaticon-audio-system: "\f107";
+    $font-Flaticon-audio-volume: "\f108";
+    $font-Flaticon-battery-warning: "\f109";
+    $font-Flaticon-battery-with-charger: "\f10a";
+    $font-Flaticon-blocked-lock: "\f10b";
+    $font-Flaticon-bright-light-bulb: "\f10c";
+    $font-Flaticon-business-briefcase: "\f10d";
+    $font-Flaticon-calculator-buttons: "\f10e";
+    $font-Flaticon-calculator-with-two-buttons: "\f10f";
+    $font-Flaticon-camera-tripod: "\f110";
+    $font-Flaticon-cd-music: "\f111";
+    $font-Flaticon-cd-player: "\f112";
+    $font-Flaticon-cellphone-sim-card: "\f113";
+    $font-Flaticon-cellphone-sim-card-1: "\f114";
+    $font-Flaticon-cellphone-with-buttons: "\f115";
+    $font-Flaticon-charging-phone: "\f116";
+    $font-Flaticon-chat-bubbles: "\f117";
+    $font-Flaticon-chatting-bubble: "\f118";
+    $font-Flaticon-circular-play-button: "\f119";
+    $font-Flaticon-clipboard-with-text: "\f11a";
+    $font-Flaticon-clock-needles: "\f11b";
+    $font-Flaticon-clock-with-check-sign: "\f11c";
+    $font-Flaticon-closed-folder: "\f11d";
+    $font-Flaticon-cloud-connection: "\f11e";
+    $font-Flaticon-cloud-upload-signal: "\f11f";
+    $font-Flaticon-compac-disc-audio: "\f120";
+    $font-Flaticon-computer-connections: "\f121";
+    $font-Flaticon-computer-picture: "\f122";
+    $font-Flaticon-computer-shield: "\f123";
+    $font-Flaticon-computing-cloud-with-signal: "\f124";
+    $font-Flaticon-connection-system: "\f125";
+    $font-Flaticon-copy-file: "\f126";
+    $font-Flaticon-crayon-and-line: "\f127";
+    $font-Flaticon-cut-microphone: "\f128";
+    $font-Flaticon-desk-lamp-on: "\f129";
+    $font-Flaticon-devices-connected: "\f12a";
+    $font-Flaticon-directional-compass: "\f12b";
+    $font-Flaticon-download-from-computing-cloud: "\f12c";
+    $font-Flaticon-drawing-tablet: "\f12d";
+    $font-Flaticon-drawing-tablet-1: "\f12e";
+    $font-Flaticon-dvd-player: "\f12f";
+    $font-Flaticon-earphones-unplugged: "\f130";
+    $font-Flaticon-erasing-file: "\f131";
+    $font-Flaticon-exchanging-emails: "\f132";
+    $font-Flaticon-favourite-heart: "\f133";
+    $font-Flaticon-fax-with-phone: "\f134";
+    $font-Flaticon-file-checked: "\f135";
+    $font-Flaticon-film-clapper: "\f136";
+    $font-Flaticon-film-roler: "\f137";
+    $font-Flaticon-film-strips-video-player: "\f138";
+    $font-Flaticon-folder-with-plus-sign: "\f139";
+    $font-Flaticon-forwards: "\f13a";
+    $font-Flaticon-frontal-video-camera: "\f13b";
+    $font-Flaticon-game-boy-console: "\f13c";
+    $font-Flaticon-graphic-on-screen: "\f13d";
+    $font-Flaticon-hard-drive-symbol: "\f13e";
+    $font-Flaticon-hd-television: "\f13f";
+    $font-Flaticon-headphones-sound: "\f140";
+    $font-Flaticon-headphones-with-microphone: "\f141";
+    $font-Flaticon-headphones-with-wire: "\f142";
+    $font-Flaticon-home-phone: "\f143";
+    $font-Flaticon-home-telephone-top-view: "\f144";
+    $font-Flaticon-horizontal-tablet-screen: "\f145";
+    $font-Flaticon-horizontal-tablet-with-hand: "\f146";
+    $font-Flaticon-horizontal-tablet-with-left-arrow: "\f147";
+    $font-Flaticon-infographic-file: "\f148";
+    $font-Flaticon-internet-full-signal: "\f149";
+    $font-Flaticon-ipod-player: "\f14a";
+    $font-Flaticon-ipod-reproductor: "\f14b";
+    $font-Flaticon-joystick-with-button: "\f14c";
+    $font-Flaticon-keyboard-with-cable: "\f14d";
+    $font-Flaticon-laptop-arrow: "\f14e";
+    $font-Flaticon-laptop-message: "\f14f";
+    $font-Flaticon-laptop-signal: "\f150";
+    $font-Flaticon-letter-with-text-lines: "\f151";
+    $font-Flaticon-linked-chains: "\f152";
+    $font-Flaticon-list-with-one-cross: "\f153";
+    $font-Flaticon-loading-curved-arrow: "\f154";
+    $font-Flaticon-location-point: "\f155";
+    $font-Flaticon-locked-phone: "\f156";
+    $font-Flaticon-lp-player: "\f157";
+    $font-Flaticon-luminosity: "\f158";
+    $font-Flaticon-mail-agenda: "\f159";
+    $font-Flaticon-mail-signal: "\f15a";
+    $font-Flaticon-message-on-phone: "\f15b";
+    $font-Flaticon-microphone-with-wire: "\f15c";
+    $font-Flaticon-minus-battery: "\f15d";
+    $font-Flaticon-mobile-app: "\f15e";
+    $font-Flaticon-mobile-phone-with-touch-screen: "\f15f";
+    $font-Flaticon-morning-digital-clock: "\f160";
+    $font-Flaticon-mousepad: "\f161";
+    $font-Flaticon-music-player-buttons: "\f162";
+    $font-Flaticon-network-cam: "\f163";
+    $font-Flaticon-newspaper-text: "\f164";
+    $font-Flaticon-office-box: "\f165";
+    $font-Flaticon-old-calculator: "\f166";
+    $font-Flaticon-old-photo-camera: "\f167";
+    $font-Flaticon-old-projector: "\f168";
+    $font-Flaticon-old-video-camera: "\f169";
+    $font-Flaticon-one-missed-call: "\f16a";
+    $font-Flaticon-online-supermarket-cart: "\f16b";
+    $font-Flaticon-open-archive: "\f16c";
+    $font-Flaticon-open-laptop: "\f16d";
+    $font-Flaticon-open-letter: "\f16e";
+    $font-Flaticon-pause-round-button: "\f16f";
+    $font-Flaticon-pc-and-smartphone: "\f170";
+    $font-Flaticon-pendrive-checked: "\f171";
+    $font-Flaticon-phone-connection: "\f172";
+    $font-Flaticon-phone-message: "\f173";
+    $font-Flaticon-phone-wifi-signal: "\f174";
+    $font-Flaticon-phone-with-keys: "\f175";
+    $font-Flaticon-photo-camera-with-flash: "\f176";
+    $font-Flaticon-photograph-film: "\f177";
+    $font-Flaticon-play-arrow: "\f178";
+    $font-Flaticon-play-movie-button: "\f179";
+    $font-Flaticon-plug-with-cord: "\f17a";
+    $font-Flaticon-portable-game-console: "\f17b";
+    $font-Flaticon-portable-music-player: "\f17c";
+    $font-Flaticon-portable-music-player-1: "\f17d";
+    $font-Flaticon-portable-radio: "\f17e";
+    $font-Flaticon-positive-battery: "\f17f";
+    $font-Flaticon-printing-document: "\f180";
+    $font-Flaticon-radar-dish: "\f181";
+    $font-Flaticon-radio-with-antenna: "\f182";
+    $font-Flaticon-radio-with-antenna-1: "\f183";
+    $font-Flaticon-radio-with-antenna-signal: "\f184";
+    $font-Flaticon-ram-memory: "\f185";
+    $font-Flaticon-reading-message: "\f186";
+    $font-Flaticon-recycling-bin: "\f187";
+    $font-Flaticon-refresh-files: "\f188";
+    $font-Flaticon-refresh-laptop: "\f189";
+    $font-Flaticon-remote-control: "\f18a";
+    $font-Flaticon-remove-folder-circular-button: "\f18b";
+    $font-Flaticon-remove-from-cart-button: "\f18c";
+    $font-Flaticon-round-umbrella: "\f18d";
+    $font-Flaticon-safe-pc: "\f18e";
+    $font-Flaticon-saving-disc: "\f18f";
+    $font-Flaticon-screen-with-cloud: "\f190";
+    $font-Flaticon-searching-apps: "\f191";
+    $font-Flaticon-secure-computer: "\f192";
+    $font-Flaticon-security-box: "\f193";
+    $font-Flaticon-security-camera: "\f194";
+    $font-Flaticon-shelter: "\f195";
+    $font-Flaticon-shut-down-button: "\f196";
+    $font-Flaticon-shut-down-phone: "\f197";
+    $font-Flaticon-smartphone-with-headphones: "\f198";
+    $font-Flaticon-smartphone-with-pen: "\f199";
+    $font-Flaticon-speaker-box: "\f19a";
+    $font-Flaticon-star-mark: "\f19b";
+    $font-Flaticon-stop-button: "\f19c";
+    $font-Flaticon-supermarket-cart: "\f19d";
+    $font-Flaticon-system-controller: "\f19e";
+    $font-Flaticon-telephone-screen: "\f19f";
+    $font-Flaticon-television-remote-control: "\f1a0";
+    $font-Flaticon-three-bars-stats: "\f1a1";
+    $font-Flaticon-tiny-church-bell: "\f1a2";
+    $font-Flaticon-tiny-domestic-camera: "\f1a3";
+    $font-Flaticon-tiny-mouse: "\f1a4";
+    $font-Flaticon-tiny-pc: "\f1a5";
+    $font-Flaticon-tiny-upload-symbol: "\f1a6";
+    $font-Flaticon-touch-screen-with-hand: "\f1a7";
+    $font-Flaticon-touching-tablet-screen: "\f1a8";
+    $font-Flaticon-triangular-warning-signal: "\f1a9";
+    $font-Flaticon-trifolded-map: "\f1aa";
+    $font-Flaticon-tv-monitor: "\f1ab";
+    $font-Flaticon-tv-screen-with-antenna: "\f1ac";
+    $font-Flaticon-two-computer-connection: "\f1ad";
+    $font-Flaticon-two-gears: "\f1ae";
+    $font-Flaticon-two-photos: "\f1af";
+    $font-Flaticon-usb-cable: "\f1b0";
+    $font-Flaticon-usb-conecction: "\f1b1";
+    $font-Flaticon-usb-connector: "\f1b2";
+    $font-Flaticon-usb-port: "\f1b3";
+    $font-Flaticon-usb-stick: "\f1b4";
+    $font-Flaticon-vertical-speakers: "\f1b5";
+    $font-Flaticon-vhs-player-and-tape: "\f1b6";
+    $font-Flaticon-vibrating-phone: "\f1b7";
+    $font-Flaticon-vibration-symbol: "\f1b8";
+    $font-Flaticon-video-player-with-timeline: "\f1b9";
+    $font-Flaticon-vintage-mobile-phone: "\f1ba";
+    $font-Flaticon-vintage-tape: "\f1bb";
+    $font-Flaticon-vintage-video-camera: "\f1bc";
+    $font-Flaticon-voice-recording: "\f1bd";
+    $font-Flaticon-volume-bars: "\f1be";
+    $font-Flaticon-web-certificate: "\f1bf";
+    $font-Flaticon-wireless-keyboard: "\f1c0";
+    $font-Flaticon-wireless-mouse: "\f1c1";
+    $font-Flaticon-wireless-router: "\f1c2";
+    $font-Flaticon-wristwatch-app: "\f1c3";
+    $font-Flaticon-writting-file: "\f1c4";
+    $font-Flaticon-xerox-machine: "\f1c5";
+    $font-Flaticon-zoom-out-lens: "\f1c6";
+    $font-Flaticon-zooming-magnifying-glass: "\f1c7";

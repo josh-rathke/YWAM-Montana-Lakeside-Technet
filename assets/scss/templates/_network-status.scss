@@ -1,0 +1,244 @@
+/***** Scaffolding *****/
+.container a {
+    border-bottom: 1px dashed #999 !important;
+    color: #222 !important;
+
+    &:hover {
+        border-bottom: 1px solid $primary_color !important;
+    }
+}
+
+
+.template-network-status {
+    margin-top: 40px;
+    
+    /***** Dashboard View *****/
+    .snapshot-container {
+        background: #F9F9F9;
+
+        thead {
+            border: none !important;
+            background: #E6E6E6;
+
+            .snapshot-logo {
+                background: #DDDDDD;
+                text-align: center;
+            }
+
+            .snapshot-title {
+                background: #F1F1F1;
+
+                h6 {
+                    color: #444444;
+                    font-weight: bold;
+                    margin-bottom: 0px;
+                    text-align: center;
+                }
+            }
+
+            .snapshot-overview {
+                background: $primary_color;
+                color: white;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+
+        tbody {
+            background: transparent;
+            border: none;
+        }
+
+        .ic-snapshot-traffic {
+            background: $primary_color;
+            border-radius: 99999px;
+            color: white;
+            margin: 20px auto;
+            padding: 28px 0px;
+            text-align: center;
+            height: 150px;
+            width: 150px;
+
+            .ic-snapshot-traffic-title{
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .ic-snapshot-traffic-total {
+                font-size: 68px;
+                font-weight: bold;
+                line-height: .85em;
+            }
+
+            .ic-snapshot-traffic-unit {
+
+            }
+        }
+    }
+
+    .device-drilldown {
+        border-bottom: 2px solid #444444;
+        margin: 70px 0px;
+
+        h2 {
+
+        }
+    }
+
+
+    /***** Standard Styles *****/
+    h4 {
+        display: inline-block;
+
+        [class^="flaticon-"]:before, 
+        [class*=" flaticon-"]:before, 
+        [class^="flaticon-"]:after, 
+        [class*=" flaticon-"]:after {
+            font-size: 28px;
+            margin-left: 0px;
+        }
+
+        i {
+            margin-right: 16px;
+        }
+    }
+
+    .status-overview {
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 16px;
+        padding: 5px 10px;
+        position: relative;
+        top: -4px;
+
+        @include breakpoint(medium down) {
+            display: block;
+            margin-left: 0px;
+            margin-bottom: 10px;
+            top: 0px;
+        }
+    }
+
+    .success-status {
+        background-color: $success-color !important;
+        color: white !important;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .warning-status {
+        background-color: $warning-color !important;
+        color: white !important;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .alert-status {
+        background-color: $alert-color !important;
+        color: white !important;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .status-icon {
+        color: $primary_color;
+        font-weight: bold;
+    }
+
+    .variable-status-icon {
+        font-weight: bold;
+        margin-right: 3px;
+    }
+
+    [class^="flaticon-"]:before, 
+    [class*=" flaticon-"]:before, 
+    [class^="flaticon-"]:after, 
+    [class*=" flaticon-"]:after {
+        margin-left: 0px !important;
+    }
+
+    /***** Table Styles *****/
+    table {
+        font-size: 14px;
+        margin-bottom: 3rem !important;;
+    }
+
+    th {
+
+        i {
+            font-weight: normal;
+        }
+    }
+
+    .status-title {
+        text-align: center;
+    }
+
+    .odd_cell {
+        background: #F1F1F1;
+    }
+
+    /***** Tip Styles *****/
+    .tip-link {
+        color: black;
+        border-bottom: 1px dashed #444;
+    }
+
+    .tip-container {
+
+        h5 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+
+            i {
+                font-weight: normal;
+                margin-right: 10px;
+            }  
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    /***** Sidebar Styles *****/
+    .ns-sidebar {
+
+        .sticky-sidebar {
+            padding-right: 13px;
+            width: 100%;
+        }
+
+        tr {
+
+            td {
+                background: white;
+            }
+
+            .icon-container {
+                background-color: #F1F1F1;
+                text-align: center;
+                width: 16%;
+            }
+
+            &.active-section {
+
+                .icon-container {
+                    background: $primary_color;
+                    color: white;
+                }
+            }
+
+            i {
+                margin: 0px;
+            }
+
+            .status-container {
+                width: 24%;
+            }
+        }
+    }
+}
