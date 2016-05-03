@@ -24,7 +24,7 @@ $fps = $network_status->file_printing_services;
 
 get_header(); ?>
 
-<!-- <meta http-equiv="refresh" content="20" /> -->
+<meta http-equiv="refresh" content="20" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.0/Chart.js"></script>
 
 <div class="template-network-status">
