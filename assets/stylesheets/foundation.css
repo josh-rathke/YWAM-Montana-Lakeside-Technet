@@ -6578,6 +6578,12 @@ html, body {
       font-size: 2rem !important;
       text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3); }
 
+.gform_confirmation_wrapper {
+  color: #ffae00;
+  border: 1px solid #ffae00;
+  font-size: 14px;
+  padding: 20px 30px; }
+
 .sites-button {
   background: #FF6908;
   font-size: 1.25rem;
