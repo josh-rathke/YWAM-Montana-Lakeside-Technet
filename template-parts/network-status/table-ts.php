@@ -6,7 +6,7 @@
         <?php echo $ts['num_ts_devices_up'] . '/' . $ts['num_ts_devices'] . ' Devices Online'; ?>
     </span>
     
-    <table>
+    <table data-magellan>
         <thead>
             <th>IP Phone Name</th>
             <td>Extension</td>
@@ -18,7 +18,7 @@
             <?php
                 foreach ($ts['phones'] as $phone) {
                     echo '<tr>';
-                        echo '<td>' . $phone['phone_name'] . '</td>';
+                        echo '<td>' . tip_lookup($phone['phone_name']) . '</td>';
                         echo '<td>' . $phone['extension'] . '</td>';
                         echo '<td style="text-align: center;">';
                             echo $phone['voicemail'] == 1 ? "<i class='status-icon flaticon-checkmark-outlined-circular-button'></i>" : "";

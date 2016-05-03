@@ -1,0 +1,22 @@
+.network-status-widget {
+    
+    .network-status-widget-body {
+        font-size: 12px;
+    
+        .network-status-widget-icon-container {
+            text-align: center;
+
+            i {
+                &:before {
+                    color: white;
+                    font-size: 50px;
+                }
+            }
+        }
+        
+        .network-status-widget-message {
+                font-size: 14px;
+                padding: 20px 15px;
+        }
+    }
+}

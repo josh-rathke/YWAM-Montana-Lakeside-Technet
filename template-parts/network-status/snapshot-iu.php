@@ -17,7 +17,7 @@ $_24_hour_traffic_up = implode(', ', $_24_hour_traffic_up);
 
 
 ?>
-<table class="snapshot-container" style="margin-bottom: 0px !important;">
+<table class="snapshot-container" style="margin-bottom: 0px !important;" data-magellan>
     <thead>
         <tr class="snapshot-title">
             <th class="snapshot-logo"><i class='flaticon-graphic'></i></th>
@@ -86,7 +86,7 @@ $_24_hour_traffic_up = implode(', ', $_24_hour_traffic_up);
     </tbody>
 </table>
 
-<table class='snapshot-container'>
+<table class='snapshot-container' data-magellan>
     <thead>
         <tr>
             <th>Connection Name</th>
@@ -97,7 +97,7 @@ $_24_hour_traffic_up = implode(', ', $_24_hour_traffic_up);
         <?php
             foreach ($ic['wan_connections'] as $connection) {
                 echo '<tr>';
-                    echo '<td>' . $connection['connection_name'] . '</td>';
+                    echo '<td>' . tip_lookup($connection['connection_name']) . '</td>';
                     echo '<td>' . $connection['24_hour_traffic'] . ' GB</td>';
                 echo '</tr>';
             }

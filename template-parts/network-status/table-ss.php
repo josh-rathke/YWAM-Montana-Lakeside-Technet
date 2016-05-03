@@ -16,7 +16,7 @@
             <?php
                 foreach ($ss['cameras'] as $camera) {
                     echo '<tr>';
-                        echo '<td>' . $camera['camera_name'] . '</td>';
+                        echo '<td>' . tip_lookup($camera['camera_name']) . '</td>';
                         echo '<td class="' . status_overview($camera['camera_status']) . '">' . $camera['camera_status'] . '</td>';
                     echo '</tr>';
                 }

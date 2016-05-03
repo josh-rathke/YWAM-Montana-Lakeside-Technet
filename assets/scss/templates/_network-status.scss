@@ -1,7 +1,8 @@
 /***** Scaffolding *****/
-.container a {
+.container a, .has-tip {
     border-bottom: 1px dashed #999 !important;
     color: #222 !important;
+    font-weight: normal;
 
     &:hover {
         border-bottom: 1px solid $primary_color !important;
@@ -9,7 +10,7 @@
 }
 
 
-.template-network-status {
+.template-network-status, network-status-widget {
     margin-top: 40px;
     
     /***** Dashboard View *****/
@@ -76,13 +77,9 @@
         }
     }
 
-    .device-drilldown {
+    .network-status-hr {
         border-bottom: 2px solid #444444;
-        margin: 70px 0px;
-
-        h2 {
-
-        }
+        margin: 40px 0px 40px 0px;
     }
 
 

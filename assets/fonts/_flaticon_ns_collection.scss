@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 01/05/2016 20:31
+    Creation date: 03/05/2016 00:58
     */
 
     @font-face {
@@ -36,10 +36,12 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-checkmark-outlined-circular-button:before { content: "\f100"; }
-.flaticon-close:before { content: "\f101"; }
-.flaticon-graphic:before { content: "\f102"; }
+    .flaticon-arrow:before { content: "\f100"; }
+.flaticon-checkmark-outlined-circular-button:before { content: "\f101"; }
+.flaticon-close:before { content: "\f102"; }
+.flaticon-graphic:before { content: "\f103"; }
     
-    $font-Flaticon-checkmark-outlined-circular-button: "\f100";
-    $font-Flaticon-close: "\f101";
-    $font-Flaticon-graphic: "\f102";
+    $font-Flaticon-arrow: "\f100";
+    $font-Flaticon-checkmark-outlined-circular-button: "\f101";
+    $font-Flaticon-close: "\f102";
+    $font-Flaticon-graphic: "\f103";

@@ -6,7 +6,7 @@
         <?php echo $wc['num_campus_aps_up'] . '/' . $wc['num_campus_aps'] . ' Devices Online'; ?>
     </span>
     
-    <table>
+    <table data-magellan>
         <thead>
             <th>Access Point Name</th>
             <td>Traffic</td>
@@ -17,7 +17,7 @@
             <?php
                 foreach ($wc['campus_wireless_aps'] as $ap) {
                     echo '<tr>';
-                        echo '<td>' . $ap['ap_name'] . '</td>';
+                        echo '<td>' . tip_lookup($ap['ap_name']) . '</td>';
                         echo '<td>';
                             echo isset($ap['ap_traffic']) ? $ap['ap_traffic'] : '';
                         echo '</td>';

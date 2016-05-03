@@ -6,7 +6,7 @@
         <?php echo $ic['num_wan_connections'] . '/' . $ic['num_wan_connections_up'] . ' Connections Available'; ?>
     </span>
 
-    <table>
+    <table data-magellan>
         <thead>
             <tr>
                 <th>Connection</th>

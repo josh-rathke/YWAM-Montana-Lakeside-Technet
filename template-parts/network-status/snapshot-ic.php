@@ -1,6 +1,6 @@
 <?php global $ic; ?>
 
-<table class="snapshot-container" style="margin-bottom: 0px !important;">
+<table class="snapshot-container" style="margin-bottom: 0px !important;" data-magellan>
     <thead>
         <tr class="snapshot-title">
             <th class="snapshot-logo"><i class='flaticon-cloud-connection'></i></th>
@@ -20,7 +20,7 @@
         </tr>
     </tbody>
 </table>
-<table class="snapshot-container">
+<table class="snapshot-container" data-magellan>
     <thead>
         <tr>
             <td>Internet Connection</td>

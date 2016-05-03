@@ -7,7 +7,7 @@
         <?php echo $nd['num_nonri_nd_devices_up'] . '/' . $nd['num_nonri_nd_devices'] . ' Devices Online'; ?>
     </span>
     
-    <table>
+    <table data-magellan>
         <thead>
             <tr>
                 <th>Switch Name</th>
@@ -28,7 +28,7 @@
         </tbody>
     </table>
     
-    <table>
+    <table data-magellan>
         <thead>
             <tr>
                 <th>Wireless Backhaul Name</th>
@@ -40,7 +40,7 @@
             <?php
             foreach ($nd['wb_devices'] as $wb) {
                 echo '<tr>';
-                    echo '<td>' . $wb['device_name'] . '</td>';
+                    echo '<td>' . tip_lookup($wb['device_name']) . '</td>';
                     echo '<td>' . $wb['device_latency'] . '</td>';
                     echo '<td class="' . status_overview($wb['device_status']) . '">' . $wb['device_status'] . '</td>';
                 echo '</tr>';

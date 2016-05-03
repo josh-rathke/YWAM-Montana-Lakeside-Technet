@@ -712,6 +712,7 @@ class NetworkStatus {
         
         //Calculate Campus AP Statistics Wireless APs - Residential
         $this->wireless_connectivity['num_campus_aps'] = $this->wireless_connectivity['num_wireless_aps'] - $this->wireless_connectivity['num_ri_aps'];
+        $this->wireless_connectivity['num_campus_aps_down'] = $this->wireless_connectivity['num_wireless_aps_down'] - $this->wireless_connectivity['num_ri_aps_down'];
         $this->wireless_connectivity['num_campus_aps_up'] = $this->wireless_connectivity['num_wireless_aps_up'] - $this->wireless_connectivity['num_ri_aps_up'];
         $this->wireless_connectivity['percent_campus_aps_up'] = ($this->wireless_connectivity['num_campus_aps_up'] / $this->wireless_connectivity['num_campus_aps'])*100;
    
@@ -875,7 +876,7 @@ class NetworkStatus {
                                 'extension'    => preg_match('/ext_[0-9]{3}/', (string) $phone->tags, $matches) ? str_replace('ext_', '', $matches[0]) : '',
                             );
                             
-                            if ($sensor->status == 'PING') {
+                            if ($sensor->status == 'Down') {
                                 $this->telephony_services['num_ts_devices_down']++;
                                 $this->telephony_services['num_ts_phones_down']++;
                             }
@@ -988,9 +989,22 @@ class NetworkStatus {
      */
     public function file_printing_services() {
         $file_servers = $this->filter_object('File Servers');
+        $printers = $this->filter_object('Printers');
         
+        $this->file_printing_services['num_fps_devices'] = 0;
+        $this->file_printing_services['num_fps_devices_down'] = 0;
+        
+        $this->file_printing_services['num_fs'] = 0;
+        $this->file_printing_services['num_fs_down'] = 0;
+        $this->file_printing_services['num_printers'] = 0;
+        $this->file_printing_services['num_printers_down'] = 0;
+
+        // Calculate and Populate File Server Information
         $fs_index = 0;
         foreach($file_servers->device as $device) {
+            $this->file_printing_services['num_fps_devices']++;
+            $this->file_printing_services['num_fs']++;
+            
             
             $this->file_printing_services['fileservers'][$fs_index]['server_name'] = (string) $device->name;
             
@@ -1002,6 +1016,11 @@ class NetworkStatus {
                 if (strpos($sensor->sensortype, 'SNMP Synology System Health') !== false) {
                     $this->file_printing_services['fileservers'][$fs_index]['server_status'] = (string) $sensor->status;
                     $this->file_printing_services['fileservers'][$fs_index]['server_temp'] = (string) $sensor->lastvalue;
+                    
+                    if($sensor->status == 'Down') {
+                        $this->file_printing_services['num_fps_devices_down']++;
+                        $this->file_printing_services['num_fs_down']++;
+                    }
                 }
                 
                 if (strpos($sensor->sensortype, 'SNMP Traffic') !== false) {
@@ -1012,12 +1031,50 @@ class NetworkStatus {
                 if (strpos($sensor->sensortype, 'SNMP Synology Physical Disk') !== false) {
                     $this->file_printing_services['fileservers'][$fs_index]['disks'][] = (string) $sensor->status;
                 }
-                
-                
             }
             
             $fs_index++;
         }
+        
+        // Calculate and Populate Priner Information
+        foreach($printers->device as $printer) {
+            $this->file_printing_services['num_fps_devices']++;
+            $this->file_printing_services['num_printers']++;
+            
+            foreach ($printer->sensor as $sensor) {
+                
+                if(strpos($sensor->name, 'SNMP Printer') !== false) {
+                    
+                    $this->file_printing_services['printers'][] = array (
+                        'printer_name'       => (string) $printer->name,
+                        'printer_pages'      => (string) $sensor->lastvalue,
+                        'printer_status_msg' => (string) $sensor->statusmessage,
+                        'printer_status'     => (string) $sensor->status,
+                    );
+                    
+                    if($sensor->status == 'Down') {
+                        $this->file_printing_services['num_fps_devices_down']++;
+                        $this->file_printing_services['num_printers_down']++;
+                    }
+                }
+            }
+        }
+        
+        // Calculate Totals for File & Printing Services
+        $this->file_printing_services['num_fps_devices_up'] =
+            $this->file_printing_services['num_fps_devices'] - $this->file_printing_services['num_fps_devices_down'];
+        $this->file_printing_services['percent_fps_devices_up'] =
+            ($this->file_printing_services['num_fps_devices_up'] / $this->file_printing_services['num_fps_devices'])*100;
+        
+        $this->file_printing_services['num_fs_up'] =
+            $this->file_printing_services['num_fs'] - $this->file_printing_services['num_fs_down'];
+        $this->file_printing_services['percent_fs_up'] =
+            ($this->file_printing_services['num_fs_up'] / $this->file_printing_services['num_fs'])*100;
+        
+        $this->file_printing_services['num_printers_up'] =
+            $this->file_printing_services['num_printers'] - $this->file_printing_services['num_printers_down'];
+        $this->file_printing_services['percent_printers_up'] =
+            ($this->file_printing_services['num_printers_up'] / $this->file_printing_services['num_printers'])*100;
     }
     
     /**
@@ -1037,6 +1094,34 @@ class NetworkStatus {
         $this->web_services();               // Build Web Services Dataset
         $this->surveillance_services();      // Build Surveillance Services Dataset
         $this->file_printing_services();     // Build File & Networking Services Dataset
+        
+        // Add Up Everything
+        $this->network_status['num_devices_services'] =
+            $this->virtualization_services['num_vs_devices'] +
+            $this->internet_connectivity['num_wan_connections'] +
+            $this->network_distribution['num_nonri_nd_devices'] +
+            $this->wireless_connectivity['num_campus_aps'] +
+            $this->residential_infrastructure['num_ri_devices'] +
+            $this->telephony_services['num_ts_devices'] +
+            $this->web_services['num_web_services'] +
+            $this->surveillance_services['num_ss_devices'] +
+            $this->file_printing_services['num_fps_devices'];
+        
+        $this->network_status['num_devices_services_down'] =
+            $this->virtualization_services['num_vs_devices_down'] +
+            $this->internet_connectivity['num_wan_connections_down'] +
+            $this->network_distribution['num_nonri_nd_devices_down'] +
+            $this->wireless_connectivity['num_campus_aps_down'] +
+            $this->residential_infrastructure['num_ri_devices_down'] +
+            $this->telephony_services['num_ts_devices_down'] +
+            $this->web_services['num_web_services_down'] +
+            $this->surveillance_services['num_ss_devices_down'] +
+            $this->file_printing_services['num_fps_devices_down'];
+        
+        $this->network_status['num_devices_services_up'] =
+            $this->network_status['num_devices_services'] - $this->network_status['num_devices_services_down'];
+        $this->network_status['percent_devices_services_up'] =
+            ($this->network_status['num_devices_services_up'] / $this->network_status['num_devices_services'])*100;
         
         // Dump the retrieved XML data.
         unset($this->retrieved_xml);

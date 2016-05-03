@@ -6,7 +6,7 @@
         <?php echo $ri['num_ri_devices_up'] . '/' . $ri['num_ri_devices'] . ' Devices Online'; ?>
     </span>
 
-    <table>
+    <table data-magellan>
         <thead>
             <tr>
                 <td>Sector Name</td>
@@ -19,7 +19,7 @@
             <?php
             foreach($ri['sectors'] as $sector) {
                 echo '<tr>';
-                    echo '<td>' . $sector['sector_name'] . '</td>';
+                    echo '<td>' . tip_lookup($sector['sector_name']) . '</td>';
                     echo '<td>' . $sector['sector_traffic'] . '</td>';
                     echo '<td>' . $sector['sector_uptime'] . '%</td>';
                     echo '<td class="' . status_overview($sector['sector_status']) . '">' . $sector['sector_status'] . '</td>';
