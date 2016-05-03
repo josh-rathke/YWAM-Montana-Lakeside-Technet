@@ -31,7 +31,7 @@ get_header(); ?>
 
     <div class="row">
         <div class="medium-8 columns">
-            <h1>Network Status Testing<sup style="color: #3adb76; font-weight: bold; font-size: 16px; top: -1.25em; text-transform: uppercase;">Beta</sup></h1>
+            <h1>Network Status <sup style="color: #3adb76; font-weight: bold; font-size: 16px; top: -1.25em; text-transform: uppercase;">Beta</sup></h1>
             <p>Ever wish you could check and see if the wifi is down? Well wish no longer, below you'll find a comprehensive list regarding the status of different parts of our network. Information represented may be slightly behind realtime due to each sensor's checkup interval, but the information for the most part should be representative of the last 60 seconds. Don't worry about refreshing the page, it will refresh itself every 20 seconds.</p>
         </div>
         <div class="medium-4 columns">
