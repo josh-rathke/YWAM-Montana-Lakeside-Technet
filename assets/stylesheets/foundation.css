@@ -6557,7 +6557,7 @@ html, body {
   padding: 0; }
 
 .hero-header {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   background-size: cover !important; }
   .hero-header .hero-description {
@@ -7163,12 +7163,12 @@ html, body {
           float: right; } }
 
 /***** Scaffolding *****/
-.container a, .has-tip {
+.container .template_network_status a, .has-tip {
   border-bottom: 1px dashed #999 !important;
   color: #222 !important;
   font-weight: normal;
   line-height: 1.2em !important; }
-  .container a:hover, .has-tip:hover {
+  .container .template_network_status a:hover, .has-tip:hover {
     border-bottom: 1px solid #5D9ECB !important; }
 
 .template-network-status, .network-status-widget {
@@ -7314,5 +7314,14 @@ html, body {
     margin: 0px; }
   .template-network-status .ns-sidebar tr .status-container, .network-status-widget .ns-sidebar tr .status-container {
     width: 24%; }
+
+.hp-quick-links {
+  margin-top: 70px; }
+  .hp-quick-links .quick-link-container {
+    position: relative; }
+  .hp-quick-links .button {
+    position: absolute;
+    bottom: -50px;
+    width: 90% !important; }
 
 /*# sourceMappingURL=foundation.css.map */

@@ -1,0 +1,13 @@
+.hp-quick-links {
+    margin-top: 70px;
+    
+    .quick-link-container {
+        position: relative;
+    }
+    
+    .button {
+        position: absolute;
+        bottom: -50px;
+        width: 90% !important;
+    }
+}
