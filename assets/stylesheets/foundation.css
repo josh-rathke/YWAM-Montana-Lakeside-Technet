@@ -6551,6 +6551,33 @@ a::after {
     font-size: 14px;
     padding: 20px 15px; }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.hero-header {
+  height: 60vh;
+  width: 100%;
+  background-size: cover !important; }
+  .hero-header .hero-description {
+    color: white;
+    margin: 0px auto;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 30%; }
+    .hero-header .hero-description h2 {
+      font-weight: bold;
+      font-size: 4.5rem !important;
+      margin-bottom: 0px;
+      text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3); }
+    .hero-header .hero-description h3 {
+      font-size: 2rem !important;
+      text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3); }
+
 .sites-button {
   background: #FF6908;
   font-size: 1.25rem;
@@ -7144,37 +7171,37 @@ a::after {
   .container a:hover, .has-tip:hover {
     border-bottom: 1px solid #5D9ECB !important; }
 
-.template-network-status, network-status-widget {
+.template-network-status, .network-status-widget {
   margin-top: 40px;
   /***** Dashboard View *****/
   /***** Standard Styles *****/
   /***** Table Styles *****/
   /***** Tip Styles *****/
   /***** Sidebar Styles *****/ }
-  .template-network-status .snapshot-container, network-status-widget .snapshot-container {
+  .template-network-status .snapshot-container, .network-status-widget .snapshot-container {
     background: #F9F9F9; }
-    .template-network-status .snapshot-container thead, network-status-widget .snapshot-container thead {
+    .template-network-status .snapshot-container thead, .network-status-widget .snapshot-container thead {
       border: none !important;
       background: #E6E6E6; }
-      .template-network-status .snapshot-container thead .snapshot-logo, network-status-widget .snapshot-container thead .snapshot-logo {
+      .template-network-status .snapshot-container thead .snapshot-logo, .network-status-widget .snapshot-container thead .snapshot-logo {
         background: #DDDDDD;
         text-align: center; }
-      .template-network-status .snapshot-container thead .snapshot-title, network-status-widget .snapshot-container thead .snapshot-title {
+      .template-network-status .snapshot-container thead .snapshot-title, .network-status-widget .snapshot-container thead .snapshot-title {
         background: #F1F1F1; }
-        .template-network-status .snapshot-container thead .snapshot-title h6, network-status-widget .snapshot-container thead .snapshot-title h6 {
+        .template-network-status .snapshot-container thead .snapshot-title h6, .network-status-widget .snapshot-container thead .snapshot-title h6 {
           color: #444444;
           font-weight: bold;
           margin-bottom: 0px;
           text-align: center; }
-      .template-network-status .snapshot-container thead .snapshot-overview, network-status-widget .snapshot-container thead .snapshot-overview {
+      .template-network-status .snapshot-container thead .snapshot-overview, .network-status-widget .snapshot-container thead .snapshot-overview {
         background: #5D9ECB;
         color: white;
         font-size: 14px;
         text-align: center; }
-    .template-network-status .snapshot-container tbody, network-status-widget .snapshot-container tbody {
+    .template-network-status .snapshot-container tbody, .network-status-widget .snapshot-container tbody {
       background: transparent;
       border: none; }
-    .template-network-status .snapshot-container .ic-snapshot-traffic, network-status-widget .snapshot-container .ic-snapshot-traffic {
+    .template-network-status .snapshot-container .ic-snapshot-traffic, .network-status-widget .snapshot-container .ic-snapshot-traffic {
       background: #5D9ECB;
       border-radius: 99999px;
       color: white;
@@ -7183,30 +7210,30 @@ a::after {
       text-align: center;
       height: 150px;
       width: 150px; }
-      .template-network-status .snapshot-container .ic-snapshot-traffic .ic-snapshot-traffic-title, network-status-widget .snapshot-container .ic-snapshot-traffic .ic-snapshot-traffic-title {
+      .template-network-status .snapshot-container .ic-snapshot-traffic .ic-snapshot-traffic-title, .network-status-widget .snapshot-container .ic-snapshot-traffic .ic-snapshot-traffic-title {
         font-weight: bold;
         text-transform: uppercase; }
-      .template-network-status .snapshot-container .ic-snapshot-traffic .ic-snapshot-traffic-total, network-status-widget .snapshot-container .ic-snapshot-traffic .ic-snapshot-traffic-total {
+      .template-network-status .snapshot-container .ic-snapshot-traffic .ic-snapshot-traffic-total, .network-status-widget .snapshot-container .ic-snapshot-traffic .ic-snapshot-traffic-total {
         font-size: 68px;
         font-weight: bold;
         line-height: .85em; }
-  .template-network-status .network-status-hr, network-status-widget .network-status-hr {
+  .template-network-status .network-status-hr, .network-status-widget .network-status-hr {
     border-bottom: 2px solid #444444;
     margin: 40px 0px 40px 0px; }
-  .template-network-status h4, network-status-widget h4 {
+  .template-network-status h4, .network-status-widget h4 {
     display: inline-block; }
     .template-network-status h4 [class^="flaticon-"]:before,
     .template-network-status h4 [class*=" flaticon-"]:before,
     .template-network-status h4 [class^="flaticon-"]:after,
-    .template-network-status h4 [class*=" flaticon-"]:after, network-status-widget h4 [class^="flaticon-"]:before,
-    network-status-widget h4 [class*=" flaticon-"]:before,
-    network-status-widget h4 [class^="flaticon-"]:after,
-    network-status-widget h4 [class*=" flaticon-"]:after {
+    .template-network-status h4 [class*=" flaticon-"]:after, .network-status-widget h4 [class^="flaticon-"]:before,
+    .network-status-widget h4 [class*=" flaticon-"]:before,
+    .network-status-widget h4 [class^="flaticon-"]:after,
+    .network-status-widget h4 [class*=" flaticon-"]:after {
       font-size: 28px;
       margin-left: 0px; }
-    .template-network-status h4 i, network-status-widget h4 i {
+    .template-network-status h4 i, .network-status-widget h4 i {
       margin-right: 16px; }
-  .template-network-status .status-overview, network-status-widget .status-overview {
+  .template-network-status .status-overview, .network-status-widget .status-overview {
     color: white;
     font-size: 14px;
     font-weight: bold;
@@ -7215,77 +7242,77 @@ a::after {
     position: relative;
     top: -4px; }
     @media screen and (max-width: 63.9375em) {
-      .template-network-status .status-overview, network-status-widget .status-overview {
+      .template-network-status .status-overview, .network-status-widget .status-overview {
         display: block;
         margin-left: 0px;
         margin-bottom: 10px;
         top: 0px; } }
-  .template-network-status .success-status, network-status-widget .success-status {
+  .template-network-status .success-status, .network-status-widget .success-status {
     background-color: #3adb76 !important;
     color: white !important;
     font-weight: bold;
     text-align: center; }
-  .template-network-status .warning-status, network-status-widget .warning-status {
+  .template-network-status .warning-status, .network-status-widget .warning-status {
     background-color: #ffae00 !important;
     color: white !important;
     font-weight: bold;
     text-align: center; }
-  .template-network-status .alert-status, network-status-widget .alert-status {
+  .template-network-status .alert-status, .network-status-widget .alert-status {
     background-color: #ec5840 !important;
     color: white !important;
     font-weight: bold;
     text-align: center; }
-  .template-network-status .status-icon, network-status-widget .status-icon {
+  .template-network-status .status-icon, .network-status-widget .status-icon {
     color: #5D9ECB;
     font-weight: bold; }
-  .template-network-status .variable-status-icon, network-status-widget .variable-status-icon {
+  .template-network-status .variable-status-icon, .network-status-widget .variable-status-icon {
     font-weight: bold;
     margin-right: 3px; }
   .template-network-status [class^="flaticon-"]:before,
   .template-network-status [class*=" flaticon-"]:before,
   .template-network-status [class^="flaticon-"]:after,
-  .template-network-status [class*=" flaticon-"]:after, network-status-widget [class^="flaticon-"]:before,
-  network-status-widget [class*=" flaticon-"]:before,
-  network-status-widget [class^="flaticon-"]:after,
-  network-status-widget [class*=" flaticon-"]:after {
+  .template-network-status [class*=" flaticon-"]:after, .network-status-widget [class^="flaticon-"]:before,
+  .network-status-widget [class*=" flaticon-"]:before,
+  .network-status-widget [class^="flaticon-"]:after,
+  .network-status-widget [class*=" flaticon-"]:after {
     margin-left: 0px !important; }
-  .template-network-status table, network-status-widget table {
+  .template-network-status table, .network-status-widget table {
     font-size: 14px;
     margin-bottom: 3rem !important; }
-  .template-network-status th i, network-status-widget th i {
+  .template-network-status th i, .network-status-widget th i {
     font-weight: normal; }
-  .template-network-status .status-title, network-status-widget .status-title {
+  .template-network-status .status-title, .network-status-widget .status-title {
     text-align: center; }
-  .template-network-status .odd_cell, network-status-widget .odd_cell {
+  .template-network-status .odd_cell, .network-status-widget .odd_cell {
     background: #F1F1F1; }
-  .template-network-status .tip-link, network-status-widget .tip-link {
+  .template-network-status .tip-link, .network-status-widget .tip-link {
     color: black;
     border-bottom: 1px dashed #444; }
-  .template-network-status .tip-container h5, network-status-widget .tip-container h5 {
+  .template-network-status .tip-container h5, .network-status-widget .tip-container h5 {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 0px;
     text-transform: uppercase; }
-    .template-network-status .tip-container h5 i, network-status-widget .tip-container h5 i {
+    .template-network-status .tip-container h5 i, .network-status-widget .tip-container h5 i {
       font-weight: normal;
       margin-right: 10px; }
-  .template-network-status .tip-container p, network-status-widget .tip-container p {
+  .template-network-status .tip-container p, .network-status-widget .tip-container p {
     font-size: 14px; }
-  .template-network-status .ns-sidebar .sticky-sidebar, network-status-widget .ns-sidebar .sticky-sidebar {
+  .template-network-status .ns-sidebar .sticky-sidebar, .network-status-widget .ns-sidebar .sticky-sidebar {
     padding-right: 13px;
     width: 100%; }
-  .template-network-status .ns-sidebar tr td, network-status-widget .ns-sidebar tr td {
+  .template-network-status .ns-sidebar tr td, .network-status-widget .ns-sidebar tr td {
     background: white; }
-  .template-network-status .ns-sidebar tr .icon-container, network-status-widget .ns-sidebar tr .icon-container {
+  .template-network-status .ns-sidebar tr .icon-container, .network-status-widget .ns-sidebar tr .icon-container {
     background-color: #F1F1F1;
     text-align: center;
     width: 16%; }
-  .template-network-status .ns-sidebar tr.active-section .icon-container, network-status-widget .ns-sidebar tr.active-section .icon-container {
+  .template-network-status .ns-sidebar tr.active-section .icon-container, .network-status-widget .ns-sidebar tr.active-section .icon-container {
     background: #5D9ECB;
     color: white; }
-  .template-network-status .ns-sidebar tr i, network-status-widget .ns-sidebar tr i {
+  .template-network-status .ns-sidebar tr i, .network-status-widget .ns-sidebar tr i {
     margin: 0px; }
-  .template-network-status .ns-sidebar tr .status-container, network-status-widget .ns-sidebar tr .status-container {
+  .template-network-status .ns-sidebar tr .status-container, .network-status-widget .ns-sidebar tr .status-container {
     width: 24%; }
 
 /*# sourceMappingURL=foundation.css.map */
