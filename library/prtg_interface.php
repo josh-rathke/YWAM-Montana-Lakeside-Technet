@@ -980,6 +980,13 @@ class NetworkStatus {
         $this->surveillance_services['num_ss_cameras'] - $this->surveillance_services['num_ss_cameras_down'];
     $this->surveillance_services['percent_ss_cameras_up'] =
         ($this->surveillance_services['num_ss_cameras_up'] / $this->surveillance_services['num_ss_cameras'])*100;
+    
+    // Sort Cameras By Name
+    function sort_by_camera_name ( $a, $b ) {
+        return strcmp($a['camera_name'], $b['camera_name']);
+    }
+
+    usort($this->surveillance_services['cameras'], 'sort_by_camera_name');
     }
     
     /**
