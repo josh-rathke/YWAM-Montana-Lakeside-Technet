@@ -26,7 +26,7 @@
 
 /* Tablet and desktop menu */
 .top-bar {
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #DDDDDD;
 
   .menu .home a {
     font-size: 1rem;
@@ -45,7 +45,7 @@
     color: #777777;
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1em;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -56,11 +56,11 @@
   }
 
   .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #CCCCCC; }
+  .menu li:not(:last-child) { border-right: 1px solid #EEEEEE; }
 
   .dropdown.menu .submenu {
-    background-color: #121212;
-    color: #e6e6e6;
+    background-color: white;
+    color: #444444;
     border: 0;
   }
 

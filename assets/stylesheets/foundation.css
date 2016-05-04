@@ -6456,7 +6456,7 @@ table.hover tr:nth-of-type(even):hover {
 
 /* Tablet and desktop menu */
 .top-bar {
-  border-bottom: 1px solid #CCCCCC; }
+  border-bottom: 1px solid #DDDDDD; }
   .top-bar .menu .home a {
     font-size: 1rem;
     color: #444444;
@@ -6470,7 +6470,7 @@ table.hover tr:nth-of-type(even):hover {
     color: #777777;
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1em;
     letter-spacing: 2px;
     text-transform: uppercase; }
@@ -6479,10 +6479,10 @@ table.hover tr:nth-of-type(even):hover {
   .top-bar .menu > li:not(.menu-text) > a {
     padding: 1rem; }
   .top-bar .menu li:not(:last-child) {
-    border-right: 1px solid #CCCCCC; }
+    border-right: 1px solid #EEEEEE; }
   .top-bar .dropdown.menu .submenu {
-    background-color: #121212;
-    color: #e6e6e6;
+    background-color: white;
+    color: #444444;
     border: 0; }
   .top-bar .dropdown.menu .has-submenu.is-down-arrow a {
     padding-right: 1rem; }
