@@ -32,7 +32,7 @@ get_header(); ?>
             $('.template-network-status').fadeOut(500, function(){
                 location.reload(true);
             });
-        }, 20000);
+        }, 60000);
     });
 </script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/components/Chart.js/dist/Chart.js"></script>
