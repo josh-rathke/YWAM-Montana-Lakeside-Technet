@@ -24,10 +24,20 @@ $fps = $network_status->file_printing_services;
 
 get_header(); ?>
 
-<meta http-equiv="refresh" content="20" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.0/Chart.js"></script>
 
-<div class="template-network-status">
+<script type="text/javascript">
+    $(function(){
+        $('.template-network-status').fadeIn(500);
+        setTimeout(function(){
+            $('.template-network-status').fadeOut(500, function(){
+                location.reload(true);
+            });
+        }, 20000);
+    });
+</script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/components/Chart.js/dist/Chart.js"></script>
+
+<div class="template-network-status" style="display: none;">
 
     <div class="row">
         <div class="medium-8 columns">
