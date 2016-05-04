@@ -41,7 +41,7 @@
 				<ul class="menu">
 					<li class="home">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Mini_logo technet.jpg" />
+                            <div class="logo-container"></div>
                         </a>
                     </li>
 				</ul>

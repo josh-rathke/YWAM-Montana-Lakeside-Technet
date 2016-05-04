@@ -6464,10 +6464,19 @@ table.hover tr:nth-of-type(even):hover {
     margin-top: -7px; }
     .top-bar .menu .home a:hover:not(.button) {
       background-color: white; }
+    .top-bar .menu .home a .logo-container {
+      background: url("../images/mini_logo_technet_small.jpg") no-repeat center center;
+      width: 100%;
+      height: 30px;
+      margin-top: -1px;
+      background-size: contain !important; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        .top-bar .menu .home a .logo-container {
+          background-image: url("../images/mini_logo_technet_retina.jpg"); } }
   .top-bar .menu a {
     height: 45px;
     line-height: 45px;
-    color: #777777;
+    color: #444444;
     padding-top: 0;
     padding-bottom: 0;
     font-size: 0.7rem;
