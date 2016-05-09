@@ -401,7 +401,6 @@ class NetworkStatus {
             }
         }
         
-        print_r($this->network_distribution['num_switches']);
         // Remove Core Switch from Distribution Switches.
         $this->network_distribution['num_dist_switches'] = $this->network_distribution['num_switches'] - 1;
 
