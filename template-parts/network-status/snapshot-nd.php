@@ -21,11 +21,11 @@
         </tr>
         <tr>
             <td colspan="2">Distribution Switches</td>
-            <td class="snapshot-status <?php echo status_overview($nd['percent_dist_switches_up']); ?>"><?php echo $nd['num_dist_switches'] . '/' . $nd['num_dist_switches_up']; ?></td>
+            <td class="snapshot-status <?php echo status_overview($nd['percent_dist_switches_up']); ?>"><?php echo $nd['num_dist_switches_up'] . '/' . $nd['num_dist_switches']; ?></td>
         </tr>
         <tr>
             <td colspan="2">Wireless Backhaul Devices</td>
-            <td class="snapshot-status <?php echo status_overview($nd['percent_wb_devices_up']); ?>"><?php echo $nd['num_wb_devices'] . '/' . $nd['num_wb_devices_up']; ?></td>
+            <td class="snapshot-status <?php echo status_overview($nd['percent_wb_devices_up']); ?>"><?php echo $nd['num_wb_devices_up'] . '/' . $nd['num_wb_devices']; ?></td>
         </tr>
     </tbody>
 </table>

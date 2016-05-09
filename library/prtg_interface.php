@@ -368,36 +368,40 @@ class NetworkStatus {
         
         // Iterate Through All Switches
         foreach ($switches as $switch) {
-            $this->network_distribution['num_switches']++;
-            
-            // Iterate Through Switch Sensors
-            foreach ($switch->sensor as $sensor) {
-                
-                // Check PING Sensor
-                if ($sensor->name == 'PING') {
-                    
-                    // Record Core Switch Statistics otherwise procedd normally.
-                    if($switch->name == "YWAMMT | SWCH | Core Switch") {
-                        $this->network_distribution['core_switch_status'] = (string) $sensor->status;
-                        
-                        if ($sensor->status == "Down") {
-                            $this->network_distribution['num_switches_down']++;
-                        }  
-                    } else {
-                        if ($sensor->status == "Down") {
-                            $this->network_distribution['num_switches_down']++;
-                            $this->network_distribution['num_dist_swtiches_down']++;
+            if (!empty($switch)) {
+                $this->network_distribution['num_switches']++;
+
+                // Iterate Through Switch Sensors
+                foreach ($switch->sensor as $sensor) {
+
+                    // Check PING Sensor
+                    if ($sensor->name == 'PING') {
+
+                        // Record Core Switch Statistics otherwise procedd normally.
+                        if($switch->name == "YWAMMT | SWCH | Core Switch") {
+                            $this->network_distribution['core_switch_status'] = (string) $sensor->status;
+
+                            if ($sensor->status == "Down") {
+                                $this->network_distribution['num_switches_down']++;
+                            }  
+                        } else {
+                            if ($sensor->status == "Down") {
+                                $this->network_distribution['num_switches_down']++;
+                                $this->network_distribution['num_dist_switches_down']++;
+                            }
                         }
+
+                        $this->network_distribution['switches'][] = array (
+                            'switch_name'    => (string) $switch->name,
+                            'switch_latency' => (string) $sensor->lastvalue,
+                            'switch_status'  => (string) $sensor->status,
+                        );
                     }
-                    
-                    $this->network_distribution['switches'][] = array (
-                        'switch_name'    => (string) $switch->name,
-                        'switch_latency' => (string) $sensor->lastvalue,
-                        'switch_status'  => (string) $sensor->status,
-                    );
                 }
             }
         }
+        
+        print_r($this->network_distribution['num_switches']);
         // Remove Core Switch from Distribution Switches.
         $this->network_distribution['num_dist_switches'] = $this->network_distribution['num_switches'] - 1;
 
