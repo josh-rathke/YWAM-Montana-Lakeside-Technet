@@ -6445,6 +6445,9 @@ table.hover tr:nth-of-type(even):hover {
   #mobile-menu, .title-bar {
     display: none !important; } }
 
+.site-header {
+  z-index: 99; }
+
 /* Mobile menu */
 .off-canvas > ul.menu {
   height: 100vh;
@@ -6456,8 +6459,7 @@ table.hover tr:nth-of-type(even):hover {
 
 /* Tablet and desktop menu */
 .top-bar {
-  border-bottom: 1px solid #DDDDDD;
-  z-index: 99; }
+  border-bottom: 1px solid #DDDDDD; }
   .top-bar .menu .home a {
     font-size: 1rem;
     color: #444444;
