@@ -171,7 +171,7 @@ function network_status_widget( $network_status = null ) {
                             echo '<span style="color: #3adb76; font-weight: bold;">All systems are currently operational.</span>';
                         } elseif ( $network_status->network_status['percent_devices_services_up'] > 90 && $network_status->network_status['percent_devices_services_up'] < 100) {
                             echo '<span style="color: #3adb76; font-weight: bold;">Most systems are currently operational.</span><br />';
-                            echo '<span style="color: #ffae00;">We are currently working the few hiccups that exists.';
+                            echo '<span style="color: #ffae00;">We are currently working out the few hiccups that exists.';
                         } elseif ( $network_status->network_status['percent_devices_services_up'] < 90 ) {
                             echo "<span style='color: #ec5840;'>Houston we have a problem. Don't worry though, we are aware and looking into it.</span>";
                         }?>
