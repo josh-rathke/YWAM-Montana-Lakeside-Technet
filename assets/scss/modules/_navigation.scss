@@ -27,6 +27,7 @@
 /* Tablet and desktop menu */
 .top-bar {
     border-bottom: 1px solid #DDDDDD;
+    z-index: 99;
 
   .menu .home a {
     font-size: 1rem;

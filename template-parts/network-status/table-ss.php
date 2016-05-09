@@ -3,7 +3,7 @@
 <div id="ss" data-magellan-target="ss">
     <h4><i class='flaticon-security-camera'></i>Surveillance Services</h4>
     <span class='status-overview <?php echo status_overview($ss['percent_ss_devices_up']); ?>'>
-        <?php echo $ss['num_ss_devices'] . '/' . $ss['num_ss_devices_up'] . ' Devices Online'; ?>
+        <?php echo $ss['num_ss_devices_up'] . '/' . $ss['num_ss_devices'] . ' Devices Online'; ?>
     </span>
     
     <table>

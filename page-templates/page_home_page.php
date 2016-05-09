@@ -17,27 +17,29 @@ get_header(); ?>
         </div>
     </div>
 
-    <div class="hp-quick-links">
-    <?php
-    // Display Quick Links
-    if( have_rows('quick_links') ):
-        echo '<div class="row medium-up-3 large-up-4" data-equalizer data-equalize-on="medium">';
+    <div class="hp-quick-links row">
+        <div class="medium-10 columns medium-centered">
+            <?php
+            // Display Quick Links
+            if( have_rows('quick_links') ):
+                echo '<div class="medium-up-2 large-up-4" data-equalizer data-equalize-on="medium">';
 
-        // loop through the rows of data
-        while ( have_rows('quick_links') ) : the_row();
+                // loop through the rows of data
+                while ( have_rows('quick_links') ) : the_row();
 
-            echo '<div class="column quick-link-container" data-equalizer-watch>';
-            // display a sub field value
-            echo '<h4>' . get_sub_field('quick_link_title') . '</h4>';
-            the_sub_field('quick_link_description');
-            echo '<a href="' . get_sub_field('quick_link_page_link') . '" class="button expanded hollow">View Page</a>';
-            
-            echo '</div>';
+                    echo '<div class="column quick-link-container" data-equalizer-watch>';
+                    // display a sub field value
+                    echo '<h4>' . get_sub_field('quick_link_title') . '</h4>';
+                    the_sub_field('quick_link_description');
+                    echo '<a href="' . get_sub_field('quick_link_page_link') . '" class="button expanded hollow">View Page</a>';
 
-        endwhile;
-        
-        echo '</div>';
-    else : endif; ?>
+                    echo '</div>';
+
+                endwhile;
+
+                echo '</div>';
+            else : endif; ?>
+        </div>
     </div>
 
 <?php get_footer(); ?>

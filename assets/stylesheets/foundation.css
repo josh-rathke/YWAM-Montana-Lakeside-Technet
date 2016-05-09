@@ -6456,7 +6456,8 @@ table.hover tr:nth-of-type(even):hover {
 
 /* Tablet and desktop menu */
 .top-bar {
-  border-bottom: 1px solid #DDDDDD; }
+  border-bottom: 1px solid #DDDDDD;
+  z-index: 99; }
   .top-bar .menu .home a {
     font-size: 1rem;
     color: #444444;
@@ -6565,7 +6566,7 @@ html, body {
   padding: 0; }
 
 .hero-header {
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   background-size: cover !important; }
   .hero-header .hero-description {
@@ -6576,14 +6577,15 @@ html, body {
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 30%; }
+    top: 20%; }
     .hero-header .hero-description h2 {
       font-weight: bold;
-      font-size: 4.5rem !important;
       margin-bottom: 0px;
       text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3); }
+      @media screen and (min-width: 64em) {
+        .hero-header .hero-description h2 {
+          font-size: 4rem; } }
     .hero-header .hero-description h3 {
-      font-size: 2rem !important;
       text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3); }
 
 .gform_confirmation_wrapper {
@@ -7333,6 +7335,7 @@ html, body {
 .hp-quick-links {
   margin-top: 70px; }
   .hp-quick-links .quick-link-container {
+    margin-bottom: 60px;
     position: relative; }
   .hp-quick-links .button {
     position: absolute;
