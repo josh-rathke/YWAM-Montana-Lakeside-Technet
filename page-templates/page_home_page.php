@@ -29,7 +29,7 @@ get_header(); ?>
 
                     echo '<div class="column quick-link-container" data-equalizer-watch>';
                     // display a sub field value
-                    echo '<h4>' . get_sub_field('quick_link_title') . '</h4>';
+                    echo '<h5 style="font-weight: bold; text-transform: uppercase;">' . get_sub_field('quick_link_title') . '</h5>';
                     the_sub_field('quick_link_description');
                     echo '<a href="' . get_sub_field('quick_link_page_link') . '" class="button expanded hollow">View Page</a>';
 

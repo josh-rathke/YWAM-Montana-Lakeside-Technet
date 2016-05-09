@@ -4,3 +4,55 @@
     font-size: 14px;
     padding: 20px 30px;
 }
+
+.sidebar {
+    .gform_wrapper {
+        background: #F6F6F6;
+        padding: 15px 15px 50px 15px;
+        position: relative;
+        
+        .top_label .gfield_label {
+            display: none !important;
+        }
+        
+        .field_sublabel_below .ginput_complex.ginput_container label,
+        .field_sublabel_below div[class*=gfield_time_].ginput_container label {
+            display: none;
+        }
+        
+        .gform_footer {
+            padding: 0px;
+            
+            .button {
+                width: 100%;
+                position: absolute;
+                right: 0px;
+                left: 0px;
+                bottom: 0px;
+                width: 100%;
+            }
+        }
+    }
+    
+    [type='text'], 
+    [type='password'], 
+    [type='date'], 
+    [type='datetime'], 
+    [type='datetime-local'], 
+    [type='month'], 
+    [type='week'], 
+    [type='email'], 
+    [type='number'], 
+    [type='search'], 
+    [type='tel'], 
+    [type='time'], 
+    [type='url'], 
+    [type='color'], 
+    textarea {
+        border: 1px solid #E9E9E9 !important;
+        box-shadow: none;
+        font-size: 14px !important;
+        margin-bottom: 0px;
+        padding: 10px 10px !important;
+    }
+}
