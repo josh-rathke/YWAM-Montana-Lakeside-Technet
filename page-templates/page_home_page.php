@@ -22,7 +22,7 @@ get_header(); ?>
             <?php
             // Display Quick Links
             if( have_rows('quick_links') ):
-                echo '<div class="medium-up-2 large-up-4" data-equalizer data-equalize-on="medium">';
+                echo '<div class="large-up-2" data-equalizer data-equalize-on="medium">';
 
                 // loop through the rows of data
                 while ( have_rows('quick_links') ) : the_row();
