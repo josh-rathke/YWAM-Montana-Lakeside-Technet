@@ -368,7 +368,7 @@ class NetworkStatus {
         
         // Iterate Through All Switches
         foreach ($switches as $switch) {
-            if (!empty($switch)) {
+            if (!empty($switch->name)) {
                 print_r($switch->name);
                 $this->network_distribution['num_switches']++;
 
