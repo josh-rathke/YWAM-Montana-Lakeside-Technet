@@ -7234,7 +7234,6 @@ html, body {
   /***** Dashboard View *****/
   /***** Standard Styles *****/
   /***** Table Styles *****/
-  /***** Tip Styles *****/
   /***** Sidebar Styles *****/ }
   .template-network-status .snapshot-container, .network-status-widget .snapshot-container {
     background: #F9F9F9; }
@@ -7334,28 +7333,31 @@ html, body {
   .network-status-widget [class^="flaticon-"]:after,
   .network-status-widget [class*=" flaticon-"]:after {
     margin-left: 0px !important; }
-  .template-network-status table, .network-status-widget table {
-    font-size: 14px;
-    margin-bottom: 3rem !important; }
-  .template-network-status th i, .network-status-widget th i {
-    font-weight: normal; }
-  .template-network-status .status-title, .network-status-widget .status-title {
-    text-align: center; }
-  .template-network-status .odd_cell, .network-status-widget .odd_cell {
-    background: #F1F1F1; }
-  .template-network-status .tip-link, .network-status-widget .tip-link {
-    color: black;
-    border-bottom: 1px dashed #444; }
-  .template-network-status .tip-container h5, .network-status-widget .tip-container h5 {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 0px;
-    text-transform: uppercase; }
-    .template-network-status .tip-container h5 i, .network-status-widget .tip-container h5 i {
-      font-weight: normal;
-      margin-right: 10px; }
-  .template-network-status .tip-container p, .network-status-widget .tip-container p {
-    font-size: 14px; }
+  .template-network-status #tablesContainer, .network-status-widget #tablesContainer {
+    /***** Tip Styles *****/ }
+    .template-network-status #tablesContainer > div, .network-status-widget #tablesContainer > div {
+      padding-top: 3rem; }
+    .template-network-status #tablesContainer table, .network-status-widget #tablesContainer table {
+      font-size: 14px; }
+    .template-network-status #tablesContainer th i, .network-status-widget #tablesContainer th i {
+      font-weight: normal; }
+    .template-network-status #tablesContainer .status-title, .network-status-widget #tablesContainer .status-title {
+      text-align: center; }
+    .template-network-status #tablesContainer .odd_cell, .network-status-widget #tablesContainer .odd_cell {
+      background: #F1F1F1; }
+    .template-network-status #tablesContainer .tip-link, .network-status-widget #tablesContainer .tip-link {
+      color: black;
+      border-bottom: 1px dashed #444; }
+    .template-network-status #tablesContainer .tip-container h5, .network-status-widget #tablesContainer .tip-container h5 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 0px;
+      text-transform: uppercase; }
+      .template-network-status #tablesContainer .tip-container h5 i, .network-status-widget #tablesContainer .tip-container h5 i {
+        font-weight: normal;
+        margin-right: 10px; }
+    .template-network-status #tablesContainer .tip-container p, .network-status-widget #tablesContainer .tip-container p {
+      font-size: 14px; }
   .template-network-status .ns-sidebar .sticky-sidebar, .network-status-widget .ns-sidebar .sticky-sidebar {
     padding-right: 13px;
     padding-top: 50px;
