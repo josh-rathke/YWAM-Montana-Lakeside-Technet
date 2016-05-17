@@ -162,49 +162,49 @@
         > div {
             padding-top: 3rem;
         }
+    }
     
-        table {
-            font-size: 14px;
-        }
+    table {
+        font-size: 14px;
+    }
 
-        th {
+    th {
+
+        i {
+            font-weight: normal;
+        }
+    }
+
+    .status-title {
+        text-align: center;
+    }
+
+    .odd_cell {
+        background: #F1F1F1;
+    }
+
+    /***** Tip Styles *****/
+    .tip-link {
+        color: black;
+        border-bottom: 1px dashed #444;
+    }
+
+    .tip-container {
+
+        h5 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 0px;
+            text-transform: uppercase;
 
             i {
                 font-weight: normal;
-            }
+                margin-right: 10px;
+            }  
         }
 
-        .status-title {
-            text-align: center;
-        }
-
-        .odd_cell {
-            background: #F1F1F1;
-        }
-
-        /***** Tip Styles *****/
-        .tip-link {
-            color: black;
-            border-bottom: 1px dashed #444;
-        }
-
-        .tip-container {
-
-            h5 {
-                font-size: 14px;
-                font-weight: bold;
-                margin-bottom: 0px;
-                text-transform: uppercase;
-
-                i {
-                    font-weight: normal;
-                    margin-right: 10px;
-                }  
-            }
-
-            p {
-                font-size: 14px;
-            }
+        p {
+            font-size: 14px;
         }
     }
 
