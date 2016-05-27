@@ -691,7 +691,7 @@ class NetworkStatus {
             if ($device->name == 'YWAMMT-COREROUTER') {
                 foreach ($device->sensor as $sensor) {
                     if (strpos($sensor->name, 'YWAMMT-House') !== false) {
-                        $this->wireless_connectivity['ywam_ri_traffic'] += $sensor->lastvalue;
+                        $this->wireless_connectivity['ywam_ri_traffic'] += sanitize_traffic_kbit($sensor->lastvalue);
                     }
                 }
             }
