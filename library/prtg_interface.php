@@ -697,8 +697,6 @@ class NetworkStatus {
             }
         }
         
-        print_r($this->wireless_connectivity['ywam_ri_traffic']);
-        
         // Defind JS Data String for Chart
         $this->wireless_connectivity['js_traffic_string'] =  
             $this->wireless_connectivity['ywam_gen_traffic'] . ',' . 
