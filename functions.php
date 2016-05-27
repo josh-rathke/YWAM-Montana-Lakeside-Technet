@@ -60,7 +60,7 @@ require_once( 'library/prtg_interface.php' );
 function status_overview($status) {
     if ($status == 100 || $status == 'Up') {
         return 'success-status';
-    } elseif ($status > 90 && $status < 100 || $status == 'Warning') {
+    } elseif ($status > 90 && $status < 100 || $status == 'Warning' || $status == 'Unusual') {
         return 'warning-status';
     } else {
         return 'alert-status';
