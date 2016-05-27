@@ -9,7 +9,7 @@
     <table data-magellan>
         <thead>
             <th>Access Point Name</th>
-            <td>Traffic</td>
+            <td class="show-for-medium">Traffic</td>
             <th style="text-align: center;">Status</th>
         </thead>
         <tbody>
@@ -18,7 +18,7 @@
                 foreach ($wc['campus_wireless_aps'] as $ap) {
                     echo '<tr>';
                         echo '<td>' . tip_lookup($ap['ap_name']) . '</td>';
-                        echo '<td>';
+                        echo '<td class="show-for-medium">';
                             echo isset($ap['ap_traffic']) ? $ap['ap_traffic'] : '';
                         echo '</td>';
                         echo '<td class="' . status_overview($ap['ap_status']) . '">' . $ap['ap_status'] . '</td>';

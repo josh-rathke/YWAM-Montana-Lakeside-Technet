@@ -11,7 +11,7 @@
             <tr>
                 <td>Sector Name</td>
                 <td>Traffic</td>
-                <td>Uptime</td>
+                <td class="show-for-medium">Uptime</td>
                 <td width="15%">Status</td>
             </tr>
         </thead>
@@ -21,7 +21,7 @@
                 echo '<tr>';
                     echo '<td>' . tip_lookup($sector['sector_name']) . '</td>';
                     echo '<td>' . $sector['sector_traffic'] . '</td>';
-                    echo '<td>' . $sector['sector_uptime'] . '%</td>';
+                    echo '<td class="show-for-medium">' . $sector['sector_uptime'] . '%</td>';
                     echo '<td class="' . status_overview($sector['sector_status']) . '">' . $sector['sector_status'] . '</td>';
                 echo '</tr>';
             }

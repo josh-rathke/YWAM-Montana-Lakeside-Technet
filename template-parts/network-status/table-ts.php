@@ -10,7 +10,7 @@
         <thead>
             <th>IP Phone Name</th>
             <td>Extension</td>
-            <th style="text-align: center;">Voicemail</th>
+            <th class="show-for-medium" style="text-align: center;">Voicemail</th>
             <th style="text-align: center;">Status</th>
         </thead>
         <tbody>
@@ -20,7 +20,7 @@
                     echo '<tr>';
                         echo '<td>' . tip_lookup($phone['phone_name']) . '</td>';
                         echo '<td>' . $phone['extension'] . '</td>';
-                        echo '<td style="text-align: center;">';
+                        echo '<td class="show-for-medium" style="text-align: center;">';
                             echo $phone['voicemail'] == 1 ? "<i class='status-icon flaticon-checkmark-outlined-circular-button'></i>" : "";
                         echo '</td>';
                         echo '<td class="' . status_overview($phone['phone_status']) . '">' . $phone['phone_status'] . '</td>';

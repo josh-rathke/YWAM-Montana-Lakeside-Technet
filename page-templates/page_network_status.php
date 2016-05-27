@@ -123,7 +123,7 @@ get_header(); ?>
         </div>
 
 
-        <div class="large-4 columns ns-sidebar" data-sticky-container>
+        <div class="large-4 columns ns-sidebar show-for-large" data-sticky-container>
             <div class="sticky sticky-sidebar" data-sticky data-anchor="tablesContainer">
                 <table class="medium-12 columns" data-magellan>
                     <tr>

@@ -676,13 +676,29 @@ class NetworkStatus {
                     }
 
                     // Only add residential traffic value to Houses Devices
-                    if (strpos($device->name, 'House') !== false) {
+                    if (strpos($device->name, 'YWAMMT-House') !== false) {
                         $this->wireless_connectivity['ywam_ri_traffic'] += 
                             ($device_ywam_ri_traffic - $device_ywam_gen_traffic) < 0 ? 0 : $device_ywam_ri_traffic - $device_ywam_gen_traffic;
                     }
                 }
             }
         }
+        
+        // Calculate Residential Usage
+        $network_infrastructure = $this->filter_object('Network Infrastructure');
+        
+        foreach ($network_infrastructure->device as $device) {
+            if ($device->name == 'YWAMMT-COREROUTER') {
+                foreach ($device->sensor as $sensor) {
+                    if (strpos($sensor->name, 'YWAMMT-House') !== false) {
+                        $this->wireless_connectivity['ywam_ri_traffic'] += $sensor->lastvalue;
+                    }
+                }
+            }
+        }
+        
+        print_r($this->wireless_connectivity['ywam_ri_traffic']);
+        
         // Defind JS Data String for Chart
         $this->wireless_connectivity['js_traffic_string'] =  
             $this->wireless_connectivity['ywam_gen_traffic'] . ',' . 

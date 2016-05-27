@@ -32,7 +32,7 @@
         <thead>
             <tr>
                 <th>Wireless Backhaul Name</th>
-                <th>Response Time</th>
+                <th class="show-for-medium">Response Time</th>
                 <th style="text-align: center;">Status</th>
             </tr>
         </thead>
@@ -41,7 +41,7 @@
             foreach ($nd['wb_devices'] as $wb) {
                 echo '<tr>';
                     echo '<td>' . tip_lookup($wb['device_name']) . '</td>';
-                    echo '<td>' . $wb['device_latency'] . '</td>';
+                    echo '<td class="show-for-medium">' . $wb['device_latency'] . '</td>';
                     echo '<td class="' . status_overview($wb['device_status']) . '">' . $wb['device_status'] . '</td>';
                 echo '</tr>';
             }

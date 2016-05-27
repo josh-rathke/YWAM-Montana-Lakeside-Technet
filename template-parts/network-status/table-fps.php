@@ -10,8 +10,8 @@
         <thead>
             <th>Fileserver Name</th>
             <th>Traffic</th>
-            <th>Temperature</th>
-            <th>Hard Drives</th>
+            <th class="show-for-medium">Temperature</th>
+            <th class="show-for-medium">Hard Drives</th>
             <th style="text-align: center;">Status</th>
         </thead>
         <tbody>
@@ -21,8 +21,8 @@
                     echo '<tr>';
                         echo '<td>' . $fs['server_name'] . '</td>';
                         echo '<td>' . $fs['server_traffic'] . ' Mbit/s</td>';
-                        echo '<td>' . $fs['server_temp'] . '</td>';
-                        echo '<td>';
+                        echo '<td class="show-for-medium">' . $fs['server_temp'] . '</td>';
+                        echo '<td class="show-for-medium">';
                             foreach ($fs['disks'] as $disk) {
                                 if ($disk == 'Up') {
                                     echo '<i class="flaticon-checkmark-outlined-circular-button variable-status-icon" style="color: #3adb76; "></i>';
@@ -44,7 +44,7 @@
     <table data-magellan>
         <thead>
             <th>Printer Name</th>
-            <th>Pages Printed</th>
+            <th class="show-for-medium">Pages Printed</th>
             <th>Status Message</th>
             <th style="text-align: center;">Status</th>
         </thead>
@@ -54,7 +54,7 @@
                 foreach ($fps['printers'] as $printer) {
                     echo '<tr>';
                         echo '<td>' . $printer['printer_name'] . '</td>';
-                        echo '<td>' . $printer['printer_pages'] . '</td>';
+                        echo '<td class="show-for-medium">' . $printer['printer_pages'] . '</td>';
                         echo '<td>';
                             echo '<span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="' . $printer['printer_status_msg'] . '">View Message</span>';
                         echo '</td>';
